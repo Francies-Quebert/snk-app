@@ -1,8 +1,10 @@
+![App Example](./assets/example.gif)
+
 ---
+
 # SNK Test App Improvements
 
-This document outlines the improvements made to the SNK Test App, the rationale behind each change, and the approaches used to enhance the application.
----
+## This document outlines the improvements made to the SNK Test App, the rationale behind each change, and the approaches used to enhance the application.
 
 # Wondering why the library is used! 🧐
 
@@ -97,12 +99,7 @@ Its not used but would be my first choice due to less time to configure, lightwe
 
 ## Testing and Type Checking
 
-### 1. Jest Setup
-
-- **Issue:** Facing issues with third-party libraries during Jest setup.
-- **Approach:** Resolve these issues to enable comprehensive testing and improve code reliability.
-
-### 2. Strict Type Checking
+### 1. Strict Type Checking
 
 - **Why?** Strict type checking reduces bugs and improves code quality.
 - **Approach:** Enable stricter TypeScript settings for better type safety.
