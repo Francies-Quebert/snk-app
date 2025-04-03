@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ControlButton renders correctly 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "borderRadius": 20,
+        "padding": 5,
+        "position": "absolute",
+        "top": "50%",
+        "transform": [
+          {
+            "translateY": -16,
+          },
+        ],
+      },
+      undefined,
+    ]
+  }
+>
+  <SimpleLineIcons
+    color="#1E1E1E"
+    name="arrow-right"
+    size={32}
+    style={
+      [
+        {
+          "color": "#000",
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`ControlButton renders with custom styles 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    [
+      {
+        "borderRadius": 20,
+        "padding": 5,
+        "position": "absolute",
+        "top": "50%",
+        "transform": [
+          {
+            "translateY": -16,
+          },
+        ],
+      },
+      {
+        "backgroundColor": "red",
+      },
+    ]
+  }
+>
+  <SimpleLineIcons
+    color="#1E1E1E"
+    name="arrow-left"
+    size={32}
+    style={
+      [
+        {
+          "color": "#000",
+        },
+        {
+          "color": "blue",
+        },
+      ]
+    }
+  />
+</View>
+`;

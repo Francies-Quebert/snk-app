@@ -1,0 +1,53 @@
+
+
+get custom icons
+
+get fonts correct
+
+use optimized image(use image library)
+
+website spacing is quite inconsistent some place its 15,16  needs clear set of rules.
+
+header transition needs to be implemented for better accessibility
+
+[Website Bug] in website mobile view search bar
+- open search dropdown
+- close the dropdown
+- try scrolling: page not responsive to scroll
+
+I prioritized delivering a production-ready solution within the time constraint. 
+This library leverages Reanimated for optimal performance, which I’d optimize further in a long-term project.
+
+
+The goal is to make the homescreen dynamic with data driven development approach. 
+Having control over the components and what they display through api If needed maybe a CMS.
+But also keeping to easy to understand for developers.
+
+
+Reason to not make the PHLUR takeover not much custmosizeable.
+used just once 
+no long term benefits
+
+
+use zod to validate data if data is coming for CMS or api
+
+have loading state like a skeleton 
+
+
+shopify falsh list instead of flat list
+
+
+dont over enginnerr in data driven development approach
+
+
+add eslint for better developer experience and catch issues early
+
+Why Use Zustand Over Context?
+Better Performance – React Context causes unnecessary re-renders. Zustand updates only the components that use the state.
+Easier to Use – No need to wrap components in Context.Provider.
+Scalable – Works well even if you add more UI state later (e.g., theme, user preferences).
+
+
+Can write more test need to setup jest correctly facing issue with third party library
+
+Type check can be made strict

@@ -1,20 +1,18 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
+import DrawerContent from "@/components/drawer-content/DrawerContent";
+import Header from "@/components/header/Header";
+import { useFonts } from "expo-font";
+import { SplashScreen } from "expo-router";
+import Drawer from "expo-router/drawer";
+import { useEffect } from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    FuturaSerieBQ: require("../assets/fonts/FNRegular.ttf"),
+    FuturaSerieBQThin: require("../assets/fonts/FNThin.ttf"),
   });
 
   useEffect(() => {
@@ -28,12 +26,17 @@ export default function RootLayout() {
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <SafeAreaView style={{ flex: 1 }}>
+      <GestureHandlerRootView style={{ flex: 1 }}>
+        <Drawer screenOptions={{ header: Header }} drawerContent={DrawerContent}>
+          <Drawer.Screen
+            name="index"
+            options={{
+              sceneStyle: { backgroundColor: "#FFF" },
+            }}
+          />
+        </Drawer>
+      </GestureHandlerRootView>
+    </SafeAreaView>
   );
 }

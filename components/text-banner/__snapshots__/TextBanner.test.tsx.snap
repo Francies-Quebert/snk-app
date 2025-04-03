@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextBanner Component matches the snapshot 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#CA9396",
+      "paddingHorizontal": 16,
+      "paddingVertical": 8,
+    }
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "color": "#FFFFFF",
+          "fontFamily": "FuturaforSNK",
+          "fontSize": 16,
+          "fontWeight": "400",
+        },
+        {
+          "alignSelf": "center",
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Snapshot text
+     
+    <Text
+      style={
+        [
+          {
+            "color": "#FFFFFF",
+            "fontFamily": "FuturaforSNK",
+            "fontSize": 16,
+            "fontWeight": "700",
+          },
+          undefined,
+        ]
+      }
+    >
+      Snapshot code
+    </Text>
+     - 
+    <Text
+      style={
+        [
+          {
+            "color": "#FFFFFF",
+            "fontFamily": "FuturaSerieBQThin",
+            "fontSize": 16,
+            "fontWeight": "100",
+          },
+          {
+            "textDecorationLine": "underline",
+          },
+        ]
+      }
+    >
+      Snapshot link
+    </Text>
+  </Text>
+</View>
+`;
