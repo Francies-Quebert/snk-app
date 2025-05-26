@@ -147,3 +147,4 @@ In the output, you'll find options to open the app in a
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 y to use
 \n# Trigger build
+\n# Trigger build
